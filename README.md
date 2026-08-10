@@ -12,7 +12,7 @@ This project serves as an introduction to MiniMax, a key algorithm for allowing 
 This work is self-motivated and self-funded, and is written primarily in VB.NET as a Visual Studio console application.
 
 <p align="center">
-  <img width="33.3%" alt="TicTacToe" src="./readme_img/TicTacToe.png" />
+  <img width="40%" alt="TicTacToe" src="./readme_img/TicTacToe.png" />
 </p>
 
 ---
@@ -23,7 +23,7 @@ This work is self-motivated and self-funded, and is written primarily in VB.NET 
 ✅ Optimisation through alpha-beta pruning, allowing for a ~27x speedup in performance (solving the board in under 15ms).  
 ✅ Depth-weighted evaluation function: rewards the fastest route to a win and the slowest route to a loss.  
 ✅ Chooses moves that share the best score at random, for unpredictable and 'fun' play (without sacrificing optimality).  
-✅ Upon running the AI, each legal move is individually labelled as either winning, losing, or drawing for the AI, and is diaplyed on the main screen.  
+✅ Upon running the AI, each legal move is individually labelled as either winning, losing, or drawing for the AI, and is displayed on the main screen.  
 ✅ Live search diagnostics via a real-time progress bar for the tree traversal, the depth reached, and exact time taken in the search.  
 ✅ Manual user placement mode, with a toggle to switch between X and O for manual two-player or zero-player games.  
 ✅ Ability to play random moves, for quickly testing board states.  
@@ -45,13 +45,13 @@ The best way to interact with this program for full control is directly through 
 
 ## Technical Details
 
-The **MiniMax** algorithm provides a robust, "play-safe" foundation: by assuming 'perfect' play from the opponent, the algorithm guarantees mathematically optimal decisions within its search depth: we effectively *minimise* the *maximum* evaluation of all our opponent's responces to a given move, by emplyoying a depth-first search on the current position. At each leaf node, we evaluate the position, which in the game of TicTacToe means to assign a score of {+1, 0, -1}, depending on if X has won, drawn, or lost.
+The **MiniMax** algorithm provides a robust, "play-safe" foundation: by assuming 'perfect' play from the opponent, the algorithm guarantees mathematically optimal decisions within its search depth: we effectively *minimise* the *maximum* evaluation of all our opponent's responses to a given move, by employing a depth-first search on the current position. At each leaf node, we evaluate the position, which in the game of TicTacToe means to assign a score of {+1, 0, -1}, depending on if X has won, drawn, or lost.
 
 Henceforth, a strong chess engine can be broken down into one which searches through positions quickly and efficiently, and one that can effectively evaluate the leaf nodes of our tree.
 
 Once a branch is proven no better than an already-found alternative, there is no need to explore it deeper: we can 'prune' the search early, saving *lots* of time. This forms the basis of Alpha-Beta Pruning.
 
-For more information on these algorithms' intricacies, and it's specific interaction with the game of TicTacToe, see my <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">**Chess AI NEA report**</a>.
+For more information on these algorithms' intricacies, and its specific interaction with the game of TicTacToe, see my <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">**Chess AI NEA report**</a>.
 
 ---
 
