@@ -34,7 +34,9 @@ This work is self-motivated and self-funded, and is written primarily in VB.NET 
 
 ## Project Showcase
 
-The best way to interact with this program for full control is directly through the source code - see the instructions below.
+> **Project Demo:** You can see this project live directly through the [**project build**](https://drive.google.com/drive/folders/11Bo_VyCgRszkl3X7csyAubWUL-x2KtwR?usp=sharing) (Intel 32/64-bit). Simply download and run the "TicTacToe.exe" application.
+
+Alternatively, one can download the source code, as instructed below, for full control.
 
 > **Program Controls:**
 >1) After opening and running the project solution in your IDE of choice, you will be initially presented with an infinite live-updating run of game statistics, with my AI playing against a random opponent, who always goes first. This is there to prove that the program is both perfect in play and efficient.
