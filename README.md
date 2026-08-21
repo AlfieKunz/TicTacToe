@@ -12,7 +12,7 @@ This project serves as an introduction to MiniMax, a key algorithm for allowing 
 This work is self-motivated and self-funded, and is written primarily in VB.NET as a Visual Studio console application.
 
 <p align="center">
-  <img width="66.67%" alt="TicTacToe" src="./readme_img/TicTacToe.png" />
+  <img width="66.67%" alt="TicTacToe" src="./readme_img/TicTacToe.jpg" />
 </p>
 
 ---
