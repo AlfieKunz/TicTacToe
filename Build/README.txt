@@ -1,0 +1,4 @@
+"TicTacToe.txt" Program Controls:
+1) After opening and running the project solution in your IDE of choice, you will be initially presented with an infinite live-updating run of game statistics, with my AI playing against a random opponent, who always goes first. This is there to prove that the program is both perfect in play and efficient.
+2) Press any key to terminate this suite of games, and you will be presented with the main form. To play against the AI, simply press the "Make Best Move" or "Make Random Move" buttons to input a move for X, and input your own moves by clicking an empty square on the 3x3 grid. At any point, you can start a new game by clicking the "Reset Board" button.
+3) To allow the AI or user to play against themselves, make a move as normal, then change the player icon by pressing the bottom-right button - this allows you to toggle between each player. Repeat!

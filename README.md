@@ -1,4 +1,4 @@
-# TicTacToe AI
+# TicTacToe Artificial Intelligence
 
 ![VB.NET](https://img.shields.io/badge/VB.NET-%23512BD4.svg?style=for-the-badge&logo=dotnet&logoColor=white)
 ![WinForms](https://img.shields.io/badge/Console_Application-%230078D4.svg?style=for-the-badge&logo=windows&logoColor=white)
@@ -7,7 +7,7 @@
 
 A small program that solves the game of TicTacToe using the **MiniMax algorithm** (with alpha-beta pruning), allowing the computer to play perfectly and never lose against a human player!
 
-This project serves as an introduction to MiniMax, a key algorithm for allowing an AI opponent to play in any turn-based game - together with the alpha-beta pruning enhancement, the program is able to find all possible sequences of moves in **under 15ms** (with no additional optimisations), and use this to predict the best move to make in any given position. Resultantly, the codebase is designed to be very readable, sparse, and user-friendly, as to provide an ideal learning experience. I originally wrote this program as brief motivation for my [**Chess Artificial Intelligence**](https://github.com/AlfieKunz/Chess-Game-AI) program later that year, the <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">accompanying report</a> of which outlines the technical details of this repository.
+This project serves as an introduction to MiniMax, a key algorithm for allowing an AI opponent to play in any turn-based game - together with the alpha-beta pruning enhancement, the program is able to find all possible sequences of moves in **under 15ms** (with no additional optimisations), and use this to predict the best move to make in any given position. As a result, the codebase is designed to be very readable, sparse, and user-friendly, so as to provide an ideal learning experience. I originally wrote this program as brief motivation for my [**Chess Artificial Intelligence**](https://github.com/AlfieKunz/Chess-Game-AI) program later that year, the <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">accompanying report</a> of which outlines the technical details of this repository.
 
 This work is self-motivated and self-funded, and is written primarily in VB.NET as a Visual Studio console application.
 
@@ -19,15 +19,15 @@ This work is self-motivated and self-funded, and is written primarily in VB.NET 
 
 ## Features and Highlights
 
-✅ Implementation of the MiniMax search, exhaustively solves the entire game tree, and guaranteeing optimal play.  
+✅ Implementation of the MiniMax search, exhaustively solving the entire game tree, and guaranteeing optimal play.  
 ✅ Optimisation through alpha-beta pruning, allowing for a ~27x speedup in performance (solving the board in under 15ms).  
 ✅ Depth-weighted evaluation function: rewards the fastest route to a win and the slowest route to a loss.  
 ✅ Chooses moves that share the best score at random, for unpredictable and 'fun' play (without sacrificing optimality).  
 ✅ Upon running the AI, each legal move is individually labelled as either winning, losing, or drawing for the AI, and is displayed on the main screen.  
-✅ Live search diagnostics via a real-time progress bar for the tree traversal, the depth reached, and exact time taken in the search.  
+✅ Live search diagnostics via a real-time progress bar for the tree traversal, the depth reached, and the exact time taken in the search.  
 ✅ Manual user placement mode, with a toggle to switch between X and O for manual two-player or zero-player games.  
 ✅ Ability to play random moves, for quickly testing board states.  
-✅ Win/draw/loss detection for every node, by exhaustively checking rows, columns, and diagonals for each players, falling back to draw detection when the board is full.  
+✅ Win/draw/loss detection for every node, by exhaustively checking rows, columns, and diagonals for each player, falling back to draw detection when the board is full.  
 ✅ Automated self-play simulator on start-up, pitting the AI against a random-move opponent across unlimited games, and live-tallying wins/draws/losses in a self-updating console dashboard to statistically prove perfect play.  
 
 ---
@@ -47,17 +47,17 @@ Alternatively, one can download the source code, as instructed below, for full c
 
 ## Technical Details
 
-The **MiniMax** algorithm provides a robust, "play-safe" foundation: by assuming 'perfect' play from the opponent, the algorithm guarantees mathematically optimal decisions within its search depth: we effectively *minimise* the *maximum* evaluation of all our opponent's responses to a given move, by employing a depth-first search on the current position. At each leaf node, we evaluate the position, which in the game of TicTacToe means to assign a score of {+1, 0, -1}, depending on if X has won, drawn, or lost.
+The **MiniMax** algorithm provides a robust, "play-safe" foundation. By assuming 'perfect' play from the opponent, the algorithm guarantees mathematically optimal decisions within its search depth: we effectively *minimise* the *maximum* evaluation of all our opponent's responses to a given move, by employing a depth-first search on the current position. At each leaf node, we evaluate the position, which in the game of TicTacToe means to assign a score of {+1, 0, -1}, depending on whether X has won, drawn, or lost.
 
-Henceforth, a strong chess engine can be broken down into one which searches through positions quickly and efficiently, and one that can effectively evaluate the leaf nodes of our tree.
+Consequently, a strong chess engine can be broken down into one which searches through positions quickly and efficiently, and one that can effectively evaluate the leaf nodes of our tree.
 
 Once a branch is proven no better than an already-found alternative, there is no need to explore it deeper: we can 'prune' the search early, saving *lots* of time. This forms the basis of Alpha-Beta Pruning.
 
-For more information on these algorithms' intricacies, and its specific interaction with the game of TicTacToe, see my <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">**Chess AI NEA report**</a>.
+For more information on these algorithms' intricacies, and their specific interaction with the game of TicTacToe, see my <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">**Chess AI NEA report**</a>.
 
 ---
 
-## Installation, and Folder Structure
+## Installation and Folder Structure
 
 ### Required Software: Visual Studio (.NET 4.8).
 
