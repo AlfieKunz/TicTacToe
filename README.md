@@ -34,7 +34,7 @@ This work is self-motivated and self-funded, and is written primarily in VB.NET 
 
 ## Project Showcase
 
-> **Project Demo:** You can see this project live directly through the [**project build**](https://drive.google.com/drive/folders/11Bo_VyCgRszkl3X7csyAubWUL-x2KtwR?usp=sharing) (Intel 32/64-bit). Simply download and run the "TicTacToe.exe" application.
+> **Project Demo:** You can see this project live directly through the [**project build**](https://drive.google.com/drive/folders/11Bo_VyCgRszkl3X7csyAubWUL-x2KtwR?usp=sharing) (32/64-bit). Simply download and run the "TicTacToe.exe" application.
 
 Alternatively, one can download the source code, as instructed below, for full control.
 
@@ -59,7 +59,7 @@ For more information on these algorithms' intricacies, and their specific intera
 
 ## Installation and Folder Structure
 
-### Required Software: Visual Studio (.NET 4.8).
+### Required Software: Visual Studio (.NET 4.8, x64/x86).
 
 To install, simply clone this repository using the following terminal prompts.
 ```bash
