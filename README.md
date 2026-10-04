@@ -7,7 +7,7 @@
 
 A small program that solves the game of TicTacToe using the **MiniMax algorithm** (with alpha-beta pruning), allowing the computer to play perfectly and never lose against a human player!
 
-This project serves as an introduction to MiniMax, a key algorithm for allowing an AI opponent to play in any turn-based game - together with the alpha-beta pruning enhancement, the program is able to find all possible sequences of moves in **under 15ms** (with no additional optimisations), and use this to predict the best move to make in any given position. As a result, the codebase is designed to be very readable, sparse, and user-friendly, so as to provide an ideal learning experience. I originally wrote this program as brief motivation for my [**Chess Artificial Intelligence**](https://github.com/AlfieKunz/Chess-Game-AI) program later that year, the <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">accompanying report</a> of which outlines the technical details of this repository.
+This project serves as an introduction to MiniMax, a key algorithm for allowing an AI opponent to play in any turn-based game - together with the alpha-beta pruning enhancement, the program is able to find all possible sequences of moves in **under 15ms** (with no additional optimisations), and use this to predict the best move to make in any given position. As a result, the codebase is designed to be very readable, sparse, and user-friendly, so as to provide an ideal learning experience. I originally wrote this program as brief motivation for my [**Chess Artificial Intelligence**](https://github.com/AlfieKunz/Chess-Game-AI) program later that year, the <a href="https://www.alfiekunz.co.uk/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">accompanying report</a> of which outlines the technical details of this repository.
 
 This work is self-motivated and self-funded, and is written primarily in VB.NET as a Visual Studio console application.
 
@@ -53,7 +53,7 @@ Consequently, a strong chess engine can be broken down into one which searches t
 
 Once a branch is proven no better than an already-found alternative, there is no need to explore it deeper: we can 'prune' the search early, saving *lots* of time. This forms the basis of Alpha-Beta Pruning.
 
-For more information on these algorithms' intricacies, and their specific interaction with the game of TicTacToe, see my <a href="https://www.alfiekunz.co.uk/academia/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">**Chess AI NEA report**</a>.
+For more information on these algorithms' intricacies, and their specific interaction with the game of TicTacToe, see my <a href="https://www.alfiekunz.co.uk/assets/projects/ProjectChess/Alfie%20Kunz%20Computer%20Science%20NEA%20Project%20Report.pdf#page=10" target="_blank" rel="noopener noreferrer">**Chess AI NEA report**</a>.
 
 ---
 
